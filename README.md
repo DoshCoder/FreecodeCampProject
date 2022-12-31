@@ -1,2 +1,3 @@
 # FreecodeCampProject
-(NEW) Responsive Web Designs - CatAppPhoto
+
+(NEW) Responsive Web Designs - Projects
