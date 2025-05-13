@@ -1,0 +1,31 @@
+body {
+    background-color: #f4f4f4;
+  }
+  
+  .color-grid {
+  margin: 100px 50px;
+  }
+  .color-box {
+    width: 240px;
+    height: 50px;
+  }
+  
+  .color1 {
+    background-color: #3A7BD5;
+  }
+  
+  .color2 {
+    background-color: rgb(210, 105, 30);
+  }
+  
+  .color3 {
+    background-color: goldenrod;
+  }
+  
+  .color4 {
+    background-color: hsl(320, 75%, 60%); 
+  }
+  
+  .color5 {
+    background-color: seagreen;
+  }

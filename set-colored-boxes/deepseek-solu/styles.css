@@ -1,0 +1,52 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.color-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.color1 {
+    background-color: #3A7BD5; /* Modern blue */
+}
+
+.color2 {
+    background-color: rgb(210, 105, 30); /* Earthy orange */
+}
+
+.color3 {
+    background-color: goldenrod; /* Classic gold */
+}
+
+.color4 {
+    background-color: hsl(320, 75%, 60%); /* Vibrant pink */
+}
+
+.color5 {
+    background-color: seagreen; /* Natural green */
+}

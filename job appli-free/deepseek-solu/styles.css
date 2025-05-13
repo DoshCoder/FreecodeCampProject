@@ -1,0 +1,126 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Elements */
+  input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  /* First Input Special Styling */
+  input:first-of-type {
+    border-radius: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Focus State */
+  input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Validation States */
+  input:invalid, select:invalid, textarea:invalid {
+    border-color: #e74c3c;
+  }
+  
+  input:valid, select:valid, textarea:valid {
+    border-color: #2ecc71;
+  }
+  
+  /* Radio Group Styling */
+  .radio-group {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .radio-group legend {
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  
+  /* Custom Radio Buttons */
+  .radio-group input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  
+  .radio-group input[type="radio"]:checked {
+    border-color: #3498db;
+    background-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+  }
+  
+  .radio-group input[type="radio"]:checked + label {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Textarea Specific */
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }

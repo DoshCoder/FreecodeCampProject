@@ -1,0 +1,49 @@
+/* Body styling - meets requirements for padding, margin, width and min-height */
+body {
+    margin: 0 auto;               /* Top/bottom: 0, Left/right: auto (centers) */
+    padding: 50px 0;              /* 50px top/bottom padding (requirement #10) */
+    width: 80vw;                  /* Relative to viewport width (requirement #13) */
+    min-height: calc(100vh - 100px); /* Viewport height minus padding (requirement #14) */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    box-sizing: border-box;        /* Includes padding in width/height calculations */
+}
+
+/* Header styles - contains img followed by h1 (requirements #1-5) */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 100%;                 /* Image fills header width */
+    max-height: 300px;           /* Limits image height */
+    object-fit: cover;           /* Ensures image covers space nicely */
+}
+
+/* Main content area - contains sections (requirements #6-9) */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* Centers child elements */
+    gap: 30px;                  /* Space between sections */
+}
+
+/* Section styling - meets percentage width requirement (#17) */
+section.feature {
+    width: 90%;                 /* Percentage width relative to parent (main) */
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* HR divider styling - meets percentage width requirement (#16) */
+hr.divider {
+    width: 80%;                 /* Percentage width relative to parent (main) */
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;  /* Light gray line */
+    margin: 20px 0;             /* Space above/below divider */
+}
